@@ -24,7 +24,7 @@ The underlying algorithm evaluates doctors across three distinct commercial dime
 ### The Normalization Strategy
 To prevent raw patient volume numbers from mathematically overpowering the retention scale (e.g., 1,200 monthly patients vs. 8 annual visits), a **Min-Max Normalization pipeline** was built to scale all parameters proportionally between `0.0` and `1.0` relative to peer performance before applying weights. 
 
-\[Normalized = \frac{Value - Min}{Max - Min}\]
+$$Normalized = \frac{Value - Min}{Max - Min}$$
 
 ---
 
